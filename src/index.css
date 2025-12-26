@@ -11,3 +11,7 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+.bgBorder{
+    @apply border-[1.5px] border-[var(--color-highlight)]/30 bg-[var(--color-highlight)]/10 backdrop-blur-2xl
+}
