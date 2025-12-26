@@ -3,7 +3,7 @@ import FullLayout from "./FullLayout/FullLayout";
 
 const App = () => {
   return (
-    <div className="bg-[var(--color-primary)] w-full h-screen">
+    <div className="bg-[var(--color-primary)] w-full">
       <FullLayout />
     </div>
   );

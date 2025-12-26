@@ -1,8 +1,10 @@
 import React from 'react'
 
-const MediaTitle = () => {
+const MediaTitle = ({title}) => {
   return (
-    <div>MediaTitle</div>
+    <>
+    {title && <h4 className='font-medium'>{title}</h4>}
+    </>
   )
 }
 

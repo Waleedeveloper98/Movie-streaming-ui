@@ -1,12 +1,21 @@
-import React from 'react'
-import TopBar from './TopBar/TopBar'
+import React from "react";
+import TopBar from "./TopBar/TopBar";
+import FeaturedSection from "./FeaturedSection/FeaturedSection";
+import ContentList from "./WatchingSection/ContentList";
 
 const MainLayout = () => {
   return (
-    <div className='flex-1 h-full text-white bg-[var(--color-primary)] rounded-xl p-2 px-4'>
-      <TopBar/>
+    <div className="mainLayout w-4/5 relative overflow-y-auto text-white">
+      <TopBar />
+      <div className="mainLayout w-full min-h-screen mt-16 flex flex-col gap-8 overflow-y-auto  text-white bg-[var(--color-primary)] rounded-xl p-2 px-0">
+        <FeaturedSection />
+        <div className="content-container flex flex-col gap-6">
+          <ContentList />
+          <ContentList />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
