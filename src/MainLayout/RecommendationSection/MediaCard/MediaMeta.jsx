@@ -1,13 +1,13 @@
 import React from 'react'
 
-const MediaMeta = () => {
+const MediaMeta = ({episode,time}) => {
   return (
     <div className='flex items-center justify-between'>
       <div className="episode_season">
-        <p className='text-xs px-2 py-1 rounded-full bg-white/30 border border-white/20'>S1, Ep-3</p>
+        <p className='text-xs px-2 py-1 rounded-full bg-white/30 border border-white/20'>{episode}</p>
       </div>
       <div className="time text-xs">
-        <p>30min 55sec</p>
+        <p>{time}</p>
       </div>
     </div>
   )

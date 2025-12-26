@@ -56,7 +56,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-[18%] rounded-xl flex flex-col justify-between items-start text-white px-3 py-2 border-[1.5px] border-[var(--color-highlight)]/30 bg-[var(--color-highlight)]/10 backdrop-blur-2xl h-full ">
+    <div className="w-[18%] md:w-60 h-screen md:max-h-200 lg:max-h-140  rounded-xl flex flex-col justify-between items-start text-white px-3 py-2 border-[1.5px] border-[var(--color-highlight)]/30 bg-[var(--color-highlight)]/10 backdrop-blur-2xl hidden md:flex">
       <div className="top-side w-full">
         <div className="top flex mb-8 justify-between items-center">
           <SidebarLogo />
